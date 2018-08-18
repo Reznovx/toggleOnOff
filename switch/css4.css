@@ -1,0 +1,44 @@
+.container {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	background-color: #b2d8d8;
+}
+
+.holder {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	cursor: pointer;
+	transform: translate(-50%,-50%);
+}
+
+.button {
+	width: 80px;
+	height: 40px;
+	background: grey;
+	border-radius: 30px;
+	padding: 5px;
+	transition: all 100ms ease-in-out;
+}
+
+.button > .innerButton {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #fff;
+	transition: all 100ms ease-in-out;
+}
+
+.button.active {
+	background: dodgerblue;
+}
+
+.container.active {
+	background: grey;
+}
+
+.button.active > .innerButton {
+	margin-left: 40px;
+}
